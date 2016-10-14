@@ -4,7 +4,7 @@ var counter = 0;
 
 button.onclick = function(){
     
-    //Make a request to the counter endpoint
+    //Make  a request to the counter endpoint
     
     //Capture the response and store it in a variable
     
