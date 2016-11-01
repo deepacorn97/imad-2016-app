@@ -24,6 +24,6 @@ body {
     text-align: center;
 }   
 
-.item.active {
-    : inherit
+img#madi {
+    mix-blend-mode: multiply
 }
