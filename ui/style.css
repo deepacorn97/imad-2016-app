@@ -27,3 +27,6 @@ body {
 img#madi {
     mix-blend-mode: multiply
 }
+element-style {
+    font-size: x-large;
+}
