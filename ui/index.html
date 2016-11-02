@@ -1,5 +1,24 @@
-<!doctype html>
-<html itemscope="" itemtype="http://schema.org/QAPage">
+<!DOCTYPE html>
+<html>
+ <head>
+ <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript">      </script>
+ <script>
+ function appendheaderfooter(){
+ var header="<div style='position:fixed;top:0px;background-color:aqua;'>header html</div>";
+ var footer="<div style='position:fixed;bottom:0px;background-color:aqua;'>footer html</div>"
+ $("body").append(header+footer);
+}
+  window.onload = appendheaderfooter;
+</script>
+<style>
+div{width:100%;}
+</style>
+</head>
+<body><br/>
+<p>Content goes here</p>
+</body>
+</html>
+<html>
     <head>
         <link href="/ui/style.css" rel="stylesheet" />
     </head>
@@ -8,164 +27,7 @@
 										
         <div class="container">
             <div class="center">
-                <div class="topbar">
-    <div class="topbar-wrapper">
-
-        <div class="js-topbar-dialog-corral">
-
-
-    <div class="topbar-dialog siteSwitcher-dialog dno">
-        <div class="header">
-            <h3><a href="//stackoverflow.com">current community</a>
-            </h3>
-        </div>
-        <div class="modal-content current-site-container">
-            <ul class="current-site">
-                    <li>
-                            <div class="related-links">
-                    <a href="http://chat.stackoverflow.com" class="js-gps-track" data-gps-track="site_switcher.click({ item_type:6 })">chat</a>
-            </div>
-
-
-
-
-    <a href="//stackoverflow.com" class="current-site-link site-link js-gps-track" data-id="1" data-gps-track="
-        site_switcher.click({ item_type:3 })">
-        <div class="site-icon favicon favicon-stackoverflow" title="Stack Overflow"></div>
-        Stack Overflow
-    </a>
-
-                    </li>
-                    <li class="related-site">
-                            <div class="L-shaped-icon-container">
-        <span class="L-shaped-icon"></span>
-    </div>
-
-                        
-
-
-
-    <a href="http://meta.stackoverflow.com" class="site-link js-gps-track" data-id="552" data-gps-track="
-            site.switch({ target_site:552, item_type:3 }),
-        site_switcher.click({ item_type:4 })">
-        <div class="site-icon favicon favicon-stackoverflowmeta" title="Meta Stack Overflow"></div>
-        Meta Stack Overflow
-    </a>
-
-                    </li>
-            </ul>
-        </div>
-
-        <div class="header" id="your-communities-header">
-            <h3>
-your communities            </h3>
-
-        </div>
-        <div class="modal-content" id="your-communities-section">
-
-                <div class="call-to-login">
-<a href="https://stackoverflow.com/users/signup?ssrc=site_switcher&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;amp;utm_source=stackoverflow.com&amp;amp;utm_medium=dev-story&amp;amp;utm_campaign=signup-redirect" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:10 })">Sign up</a> or <a href="https://stackoverflow.com/users/login?ssrc=site_switcher&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f32798046%2fjava-web-application-problems-in-locating-images" class="login-link js-gps-track" data-gps-track="site_switcher.click({ item_type:11 })">log in</a> to customize your list.
-                </div>
-        </div>
-
-        <div class="header">
-            <h3><a href="//stackexchange.com/sites">more stack exchange communities</a>
-            </h3>
-            <a href="http://stackoverflow.blog" class="fr">company blog</a>
-        </div>
-        <div class="modal-content">
-                <div class="child-content"></div>
-        </div>        
-    </div>
-        </div>
-
-        <div class="network-items">
-                <a href="//stackexchange.com" class="topbar-icon icon-site-switcher yes-hover js-site-switcher-button js-gps-track" data-gps-track="site_switcher.show" title="A list of all 162 Stack Exchange sites">
-                    <span class="hidden-text">Stack Exchange</span>
-                </a>
-
-    <a href="#" class="topbar-icon icon-inbox yes-hover js-inbox-button" title="Recent inbox messages">
-        <span class="hidden-text">Inbox</span>
-        <span class="unread-count" style="display:none"></span>
-    </a>
-    <a href="#" class="topbar-icon icon-achievements yes-hover js-achievements-button " data-unread-class="" title="Recent achievements: reputation, badges, and privileges earned">
-        <span class="hidden-text">Reputation and Badges</span>
-        <span class="unread-count" style="display:none">
-            
-        </span>
-    </a>
-        </div>
-
-        <div class="topbar-links">
-
-                <div class="links-container">
-                <span class="topbar-menu-links">
-                                    <a href="https://stackoverflow.com/users/signup?ssrc=head&amp;returnurl=%2fusers%2fstory%2fcurrent&amp;utm_source=stackoverflow.com&amp;utm_medium=dev-story&amp;utm_campaign=signup-redirect" class="login-link">sign up</a>
-                                <a href="https://stackoverflow.com/users/login?ssrc=head&amp;returnurl=http%3a%2f%2fstackoverflow.com%2fquestions%2f32798046%2fjava-web-application-problems-in-locating-images" class="login-link">log in</a>
-
-                            <a href="/tour">tour</a>
-        <a href="#" class="icon-help js-help-button" title="Help Center and other resources">
-            help
-            <span class="triangle"></span>
-        </a>
-    <div class="topbar-dialog help-dialog js-help-dialog dno">
-        <div class="modal-content">
-            <ul>
-                                    <li>
-                        <a href="/tour" class="js-gps-track" data-gps-track="help_popup.click({ item_type:1 })">
-                            Tour
-                            <span class="item-summary">
-                                Start here for a quick overview of the site
-                            </span>
-                        </a>
-                    </li>
-                <li>
-                    <a href="/help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:4 })">
-                        Help Center
-                        <span class="item-summary">
-                            Detailed answers to any questions you might have
-                        </span>
-                    </a>
-                </li>
-                        <li>
-                            <a href="//meta.stackoverflow.com" class="js-gps-track" data-gps-track="help_popup.click({ item_type:2 })">
-                                Meta
-                                <span class="item-summary">
-                                    Discuss the workings and policies of this site
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://stackoverflow.com/company/about" class="js-gps-track" data-gps-track="help_popup.click({ item_type:6 })">
-                                About Us
-                                <span class="item-summary">
-                                    Learn more about Stack Overflow the company
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="http://business.stackoverflow.com/?ref=topbar_help" class="js-gps-track" data-gps-track="help_popup.click({ item_type:7 })">
-                                Business
-                                <span class="item-summary">
-                                    Learn more about hiring developers or posting ads with us
-                                </span>
-                            </a>
-                        </li>
-            </ul>
-        </div>
-    </div>
-                                            </span>
-                </div>
-
-            <div class="search-container">
-                <form id="search" action="/search" method="get" autocomplete="off">
-                    <input name="q" type="text" placeholder="Search Q&amp;A" value="" tabindex="1" autocomplete="off" maxlength="240">
-                </form>
-            </div>
-
-        </div>
-    </div>
-</div>
+               
                 <div class="item active">
                  
             <img id="madi" src="https://lh3.googleusercontent.com/-HxSS5zMz-fc/WBdNy490QFI/AAAAAAAAAIs/Pjrnjc_mVUEp3gsTeAeTTma0A1B5DZ8pwCEw/w140-h139-p/494544137.jpg"/>
