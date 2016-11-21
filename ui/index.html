@@ -1,15 +1,91 @@
-<!doctype html>
-<html>
-    
-    <head>
-        <link href = "ui/style.css" rel = "stylesheet" />
-    </head>
-    <body>
-       <div class="form-group col-xs-12 floating-label-form-group controls">
+<!DOCTYPE html>
+<html lang="en"><head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>BlogBook</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/my-blog.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">BlogBook</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="article-one">Sample Post</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="site-heading">
+                        <h1>BlogBook</h1>
+                        <hr class="small">
+                        <span class="subheading">A Clean Blog By Aniket Aditya</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+   
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div id="login_area"> <h3>Login/Register Here for Posting Comments on the Articles!</h3>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Username</label>
                 <input type="text" class="form-control" id="username" placeholder="Enter Your Username">
             </div>
-            <div class="row control-group">
+        </div>
+        <div class="row control-group">
             <div class="form-group col-xs-12 floating-label-form-group controls">
               <label>Password</label>
                 <input type="password" class="form-control" id="password" placeholder="Password">
@@ -18,31 +94,128 @@
         <br>
         <input type="submit" class="btn btn-default" id="login_btn" value="Login">
         <input type="submit" class="btn btn-default" id="register_btn" value="Register">
-        <div class = "container">
-            <div class = "center">
-                <img id = 'madi' src="https://lh3.googleusercontent.com/-xLbXlEbIMEU/WCFP5s9YqyI/AAAAAAAAAJg/CSbi4GXYPb4KKynsy6cvgk4Cff40HkidACEw/w139-h140-p/dynamic_the_pictographic_animal_spray_and_the_birds_168975.jpg" class="img-small"/>
-              </div>
-            <hr/>
-            <br>
-            <h3>Personal</h3>
-            <div>
-                Hi. My name is deepa
-            </div>
-            <hr/>
-            <h3>Professional</h3>
-            <div>
-                B.E Computer Science Engineering
-            </div>
-            
-            <hr/>
-            <h3>Hi there, iam deepa & i had completed my B.Ecse.</h3>
-            <h3>Iam from chennai.And i have started my course of</h3>
-            <h3>application development in NPTEL @ Hasura.And share</h3>
-            <h3>a bit of my knowledge and share great resources.</h3>
-            <div class="footer">
-         </div>
         </div>
-        <script type="text/javascript" src="ui/main.js">
-       </script>
-    </body>
-</html>
+            <hr>
+            <h1>My Articles</h1>
+            <div id="articles"><div class="container">
+                                <div class="row">
+                               <div class="post-preview">
+                                <a href="/article-two">
+                                <h2 class="post-title">
+                                     Meet HTML 5.1
+                                </h2>
+                                <h3 class="post-subtitle">
+                                     The Major Upgrade of the Standard That No One Noticed!
+                                 </h3>
+                                </a>
+                    <p class="post-meta">Posted by <a href="/about.html">Aniket Aditya</a> on (2016-11-16)</p>
+                </div>
+                </div>
+                </div><div class="container">
+                                <div class="row">
+                               <div class="post-preview">
+                                <a href="/article-one">
+                                <h2 class="post-title">
+                                     Progressive Web Apps
+                                </h2>
+                                <h3 class="post-subtitle">
+                                     What are Progressive Web Apps?
+                                 </h3>
+                                </a>
+                    <p class="post-meta">Posted by <a href="/about.html">Aniket Aditya</a> on (2016-11-06)</p>
+                </div>
+                </div>
+                </div><div class="container">
+                                <div class="row">
+                               <div class="post-preview">
+                                <a href="/article-four">
+                                <h2 class="post-title">
+                                     Man v/s Web Application
+                                </h2>
+                                <h3 class="post-subtitle">
+                                     The Basics of Website Security for Ecommerce Retailers!
+                                 </h3>
+                                </a>
+                    <p class="post-meta">Posted by <a href="/about.html">Aniket Aditya</a> on (2016-11-05)</p>
+                </div>
+                </div>
+                </div><div class="container">
+                                <div class="row">
+                               <div class="post-preview">
+                                <a href="/article-three">
+                                <h2 class="post-title">
+                                     Javascript
+                                </h2>
+                                <h3 class="post-subtitle">
+                                     An introduction.
+                                 </h3>
+                                </a>
+                    <p class="post-meta">Posted by <a href="/about.html">Aniket Aditya</a> on (2016-11-04)</p>
+                </div>
+                </div>
+                </div></div>
+            <div class="footer">
+            </div>
+
+        </div>
+    </div>
+    </div>
+    
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="https://twitter.com/aniket_aditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.facebook.com/aniket.aditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/aniketaditya">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright © Aniket Aditya 2016</p>
+                    <p class="copyright text-muted">This Site has been visited <span id="count">132</span> times after starting the server!</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+       <script type="text/javascript" src="main.js">
+        </script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/my-blog.js"></script>
+
+
+
+</body></html>
